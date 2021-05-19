@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+    <style>
+        body {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            color: #5a5a5a;
+        }
+
+
+        /* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+        /* Carousel base class */
+        .carousel {
+            margin-bottom: 4rem;
+        }
+
+        /* Since positioning the image, we need to help out the caption */
+        .carousel-caption {
+            bottom: 3rem;
+            z-index: 10;
+        }
+
+        /* Declare heights because of positioning of img element */
+        .carousel-item {
+            height: 32rem;
+        }
+
+        .carousel-item>img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 32rem;
+        }
+
+
+        /* MARKETING CONTENT
+-------------------------------------------------- */
+
+        /* Center align the text within the three columns below the carousel */
+        .marketing .col-lg-4 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .marketing h2 {
+            font-weight: 400;
+        }
+
+        /* rtl:begin:ignore */
+        .marketing .col-lg-4 p {
+            margin-right: .75rem;
+            margin-left: .75rem;
+        }
+
+        /* rtl:end:ignore */
+
+
+        /* Featurettes
+------------------------- */
+
+        .featurette-divider {
+            margin: 5rem 0;
+            /* Space out the Bootstrap <hr> more */
+        }
+
+        /* Thin out the marketing headings */
+        .featurette-heading {
+            font-weight: 300;
+            line-height: 1;
+            /* rtl:remove */
+            letter-spacing: -.05rem;
+        }
+
+
+        /* RESPONSIVE CSS
+-------------------------------------------------- */
+
+        @media (min-width: 40em) {
+
+            /* Bump up size of carousel content */
+            .carousel-caption p {
+                margin-bottom: 1.25rem;
+                font-size: 1.25rem;
+                line-height: 1.4;
+            }
+
+            .featurette-heading {
+                font-size: 50px;
+            }
+        }
+
+        @media (min-width: 62em) {
+            .featurette-heading {
+                margin-top: 7rem;
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Nhóm 7</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Sign up</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li> -->
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                    class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#eee"></rect>
+                        <!-- <img src="https://lh3.googleusercontent.com/52WC0xD2wqTdQGPgLWxm3F4o461hUXVH8sej57r86-M2URYDAO3BvG-Boyc6W8Jz5ZlhwRmAnWG211c29MljBgrmvbN4cN74bGNjif3kQFke9KV7vr0QdzluBg7FETlnjh0euktzgEYxcP2Z5jmu0XmHAPrbOYP-71ssmglLKa7et95TbS-Mhd2x-pTXWpKowILkdeUDjUSB0k_JufDWVxcJptCjc5pseLXwDSQLaMQPs1L8LLFL_ImBq8Y07Q4eyrzQGoPRiv9FKh-WiMIsySfT0U7vgpyRmIiKVIqleLop8lJ_ynzAvrYCIm6eNCAdVkSJvB_qUOphuzfu5FgW_6Lc7_Lt0zI7rBzzFrDAOIz0SEEdCem6xADrtIHp07rBlpsGEiJsi-KDlESTe2DihSWOAMH1l1RZ63G60YtdgGb7CpVSFw3Y6JumHZtK1PONbGGaJXRD0RRWYGxqgQJixLOWoRTy6E4nJs6fKcQQJ1j_B8i7KflPkYMQCtzxD3jeGebThHZsN5ODBLx8ZraaXgIvOewW812F9dNZpFDKOV_7KBdCtzXBi_6rRJZvgJczXnIX_iH61qSNEFSPmLhDOPSzs8tgAQp-BkSOgp8bwgUOCoCViTgIMfeTfoSnw4rIrZkbhQ5UvMNojS7Z5Etg6p7OjlDU4wu12BSutW4Y2JylQRVYMEpgi2Fp-R-IfNVLibCQLoYvr4JgXEgPVtNNPu4=w1859-h459-no?authuser=0" alt=""> -->
+                    </svg>
+
+                    <div class="container">
+                        <div class="carousel-caption text-start" style="text-shadow: 2px 2px 2px black;">
+                            <h1>Nhóm 7</h1>
+                            <p>Loll.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <!-- <img src="https://lh3.googleusercontent.com/DqtwlUF3xCLeVjCfYyugTV59GLunVwRG1tuhfDle_ayIXcsyivjyBEbpozmvv1KkmM23ZRFvPNUnFBq1gQgZdl1cOyEBYpRE6jDr_NnRjeP2slGWaVtPDCOkDsF7wXPf-Oadi8IzDp2fvw8aAI0g6j-hU28rVb3Reo8LUHdTXRGc12Zb6uQ9R5Q41uBCbKi7E0VsptJ43q2lZ9Qql5nAIw1i9g5PlVYm9cesD0jfbIoCKl8wszdjNsUWb_egewVLGGACbOY8Clo9tAZGltbinXwAszgXEMq8HBzKDPsd76YLqrrix8De_lqiUIDvxYW3aP6fXtFGk5m939cucinivf2F5_tYxXCttwrjN6Iqo4z_bpz4lbB-X4MQuygqFKxHyXNwlZi3kjQm1I9NcbQABBKs4vl4KZo7PvWZeXdlBl_e3gF9Zxz-ETRaOw-oG3ZIRAB6KI9fOSEE9eFCsXMPkZpjXCgGjPHKi4jd8LGtd03OTMzyU_Hbbo4mQjmZglm2hsu3KdCuboMxBIMLjpmz0htHQ350J9yjXzaR0VKWeILyR9SDaWbts-CXqK9A0tnhry-MDMd6lummXmwwcPPWXLJyUrD0zXA3wPxLJGH2o1avF1IQlPJKXf9TZTM5TKzxtXt_9cIi34hL0ep_stENEO1kXZC_UXQu8RAycjhV-aWonAop3s2AZVnT8W-lZunrq2MN-T3iue-2otIo3J8bSm4=w1859-h460-no?authuser=0" alt=""> -->
+                    </svg>
+
+                    <div class="container">
+                        <div class="carousel-caption" style="text-shadow: 2px 2px 2px black;">
+                            <h1>Another example headline.</h1>
+                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <!-- <img src="https://lh3.googleusercontent.com/k9KK3LSixai1PjJk0THEJjwhfkc5yZA2azD0-KMgqA27MAAk-g0mTCiYOovq7hfcwxbQZnmOkg-Rjo-LYcu4CoE8yJ4Ny9j47SW5Mlx2wZSB-JEc5ZM5PDeKKCo5hZJs3S-utJ_MkS_waiEuZvUjUTwbQrenfTZHgNICQV4R1RQ_04gjLWx09NdAsSMTQHIIHt60FWiKSyoVpDKaz8ZjKhkkDuTheunSiDI-Vjxxy9OaUbAvZkSEM5cuA67Up2Wuw1qFWClg4LlMLQKYt5Z4CoDeu1eo6N7RZcGhQb43QbowT4yJ_c4vB4EcVjnvcVb-pX9XgsKsDnSZbtTyj5KIMHpsWUKs24cq71q5Yy0zmjeX3dLRdQok7bRHE4QEBs4S2eEZNrXCaCf9dgQeNEMKNyFojse8YCAEN-7lf-jC4RGdRegjBfIOOAmBcBNyvivFbXNCogTeubr3DAHQo3t5ezDsk8wuA6zVsEMPjgyoz_lA2gIJR7xx372lWCgY5hmZcbXoWMlFJFPkFZRDQ6ydO4SEsFEYq-xTucZmJoEyDyvYwA3bpUfuK2qHG8ScIc0gpmy5PnRzuixLRw-nZYJxeukkMqCN8BKoYs-HB7bv8GyfJwbRIOWptC35OLTyAV5mSI-M4-C1gUKONzQxw42QJFjgKF3fNdUGfwXT7KQWdhPjI82idMlQSzqXWxRkfJMnI_pB8ORFOACgyt6aFU_Ifrk=w1859-h460-no?authuser=0" alt=""> -->
+                    </svg>
+
+                    <div class="container">
+                        <div class="carousel-caption text-end" style="text-shadow: 2px 2px 2px black;">
+                            <h1>One more for good measure.</h1>
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+          ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em">140x140</text>
+                    </svg>
+
+                    <h2>Heading</h2>
+                    <p>Some representative placeholder content for the three columns of text below the carousel.
+                        This is the first column.</p>
+                    <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em">140x140</text>
+                    </svg>
+
+                    <h2>Heading</h2>
+                    <p>Another exciting bit of representative placeholder content. This time, we've moved on to the
+                        second column.</p>
+                    <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em">140x140</text>
+                    </svg>
+
+                    <h2>Heading</h2>
+                    <p>And lastly this, the third column of representative placeholder content.</p>
+                    <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow
+                            your mind.</span></h2>
+                    <p class="lead">Some great placeholder content for the first featurette here. Imagine some
+                        exciting prose here.</p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                            yourself.</span></h2>
+                    <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea
+                        of how this layout would work with some actual real-world content in place.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span>
+                    </h2>
+                    <p class="lead">And yes, this is the last block of representative placeholder content. Again,
+                        not really intended to be actually read, simply here to give you a better view of what this
+                        would look like with some actual content. Your content.</p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </main>
+
+
+
+
+
+
+
+
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+</body>
+
+</html>

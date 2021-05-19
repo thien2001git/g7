@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Features</title>
+
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Favicons -->
+    
+    <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .feature-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: #fff;
+            border-radius: .75rem;
+        }
+
+        .icon-link {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .icon-link>.bi {
+            margin-top: .125rem;
+            margin-left: .125rem;
+            transition: transform .25s ease-in-out;
+            fill: currentColor;
+        }
+
+        .icon-link:hover>.bi {
+            transform: translate(.25rem);
+        }
+
+        .icon-square {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            font-size: 1.5rem;
+            border-radius: .75rem;
+        }
+
+        .rounded-4 {
+            border-radius: .5rem;
+        }
+
+        .rounded-5 {
+            border-radius: 1rem;
+        }
+
+        .text-shadow-1 {
+            text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25);
+        }
+
+        .text-shadow-2 {
+            text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25);
+        }
+
+        .text-shadow-3 {
+            text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25);
+        }
+
+        .card-cover {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    
+</head>
+
+<body class="container-fluid px-4 py-5" id="icon-grid">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Nhóm 7</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Sign up</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li> -->
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br><br><br><br>
+    <div>
+        <h2 class="pb-2 border-bottom">Icon grid</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+            <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <svg id="toggles2" viewBox="0 0 16 16">
+                        <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z">
+                        </path>
+                        <path
+                            d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z">
+                        </path>
+                        <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path>
+                    </svg>
+                </svg>
+                <div>
+                    <h4 class="fw-bold mb-0">Featured title</h4>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <svg id="toggles2" viewBox="0 0 16 16">
+                        <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z">
+                        </path>
+                        <path
+                            d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z">
+                        </path>
+                        <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path>
+                    </svg>
+                </svg>
+                <div>
+                    <h4 class="fw-bold mb-0">Featured title</h4>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <svg id="toggles2" viewBox="0 0 16 16">
+                        <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z">
+                        </path>
+                        <path
+                            d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z">
+                        </path>
+                        <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path>
+                    </svg>
+                </svg>
+                <div>
+                    <h4 class="fw-bold mb-0">Featured title</h4>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <svg id="toggles2" viewBox="0 0 16 16">
+                        <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z">
+                        </path>
+                        <path
+                            d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z">
+                        </path>
+                        <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path>
+                    </svg>
+                </svg>
+                <div>
+                    <h4 class="fw-bold mb-0">Featured title</h4>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <svg id="toggles2" viewBox="0 0 16 16">
+                        <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z">
+                        </path>
+                        <path
+                            d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z">
+                        </path>
+                        <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path>
+                    </svg>
+                </svg>
+                <div>
+                    <h4 class="fw-bold mb-0">Featured title</h4>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <svg id="toggles2" viewBox="0 0 16 16">
+                        <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z">
+                        </path>
+                        <path
+                            d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z">
+                        </path>
+                        <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path>
+                    </svg>
+                </svg>
+                <div>
+                    <h4 class="fw-bold mb-0">Featured title</h4>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <svg id="toggles2" viewBox="0 0 16 16">
+                        <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z">
+                        </path>
+                        <path
+                            d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z">
+                        </path>
+                        <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path>
+                    </svg>
+                </svg>
+                <div>
+                    <h4 class="fw-bold mb-0">Featured title</h4>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <svg id="toggles2" viewBox="0 0 16 16">
+                        <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z">
+                        </path>
+                        <path
+                            d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z">
+                        </path>
+                        <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path>
+                    </svg>
+                </svg>
+                <div>
+                    <h4 class="fw-bold mb-0">Featured title</h4>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><hr class="featurette-divider"><br><br>
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    
+
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+    <script>
+        
+    </script>
+</body>
+
+</html>
